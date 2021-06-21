@@ -1,7 +1,7 @@
 /*--------------------------------------------------
     [INPUT TEXT]
 ----------------------------------------------------*/
-body {font-family: Heebo, sans-serif;}
+body {font-family: Heebo, sans-serif; padding-top: 80px;}
 * {box-sizing: border-box;}
 
 /* Full-width input fields */
@@ -9,7 +9,8 @@ input[type=text], input[type=password] {
   width: 100%;
   padding: 5px 15px 5px 15px; /* top, left, bottom, right*/
   margin: 0;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   display: inline-block;
   border: 1.5px solid #CACFD2;
   border-radius: 30px;
@@ -99,10 +100,10 @@ input[type=text]:focus, input[type=password]:focus {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
   .page-header .navbar-toggle {
-    border: none;
+    border: 0;
     margin: 25px 15px 25px 0; }
     .page-header .navbar-toggle .icon-bar {
-      background: #3f5263; }
+      background: #0066D0; }
   .page-header .navbar-brand {
     height: 82px;
     max-height: 82px;
@@ -120,8 +121,8 @@ input[type=text]:focus, input[type=password]:focus {
       display: inline-block;
       vertical-align: middle; }
   .page-header .navbar-nav li {
-    padding: 25px 1px;
-    line-height: 20px;
+    padding: 25px 10px;
+    line-height: 0;
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -138,50 +139,9 @@ input[type=text]:focus, input[type=password]:focus {
     border: none; }
   .page-header .navbar-nav li > a:focus,
   .page-header .navbar-nav li > a:hover {
+    color: #151515;
     background: inherit; }
 
-/* Responsive code for max-width: 991px */
-@media (max-width: 991px) {
-  /* 991px */
-  .page-header .navbar-header {
-    float: none; }
-  .page-header .navbar-toggle {
-    display: block; }
-  .page-header .navbar-collapse.collapse {
-    display: none !important; }
-  .page-header .navbar-collapse.collapse.in {
-    display: block !important;
-    overflow-y: auto !important; }
-  .page-header .navbar-nav {
-    margin: 0;
-    float: none !important; }
-    .page-header .navbar-nav > li {
-      float: none; } }
-/* Stylesheet design for under max-width: 991px */
-@media (max-width: 991px) {
-  /* 991px */
-  body {
-    padding-top: 80px; }
-
-  .page-header {
-    background: #0066D0;
-    /* Navbar Brand */ }
-    .page-header .navbar-fixed-top {
-      background: #fff; }
-      .page-header .navbar-fixed-top .navbar-collapse {
-        max-height: 100%;
-        /* Navbar */ }
-        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li {
-          padding: 0;
-          float: none; }
-        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li > a {
-          font-weight: 700;
-          color: #3f5263; }
-        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li.active > a,
-        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li > a:hover {
-          color: #bf5757; }
-    .page-header img.logo-default {
-      display: none; } }
 /* Stylesheet design for above 992px */
 @media (min-width: 992px) {
   /* 992px */
@@ -200,6 +160,7 @@ input[type=text]:focus, input[type=password]:focus {
       float: right; }
       .page-header .navbar-nav li > a {
         padding: 5px 12px; } }
+
 /* Stylesheet design on Scroll (Fixed Header) 992px */
 @media (min-width: 992px) {
   /* 992px */
@@ -207,9 +168,9 @@ input[type=text]:focus, input[type=password]:focus {
     /* Navbar Brand */
     /* Navbar Nav */ }
     .page-on-scroll .page-header .navbar-brand {
-      height: 70px;
-      max-height: 70px;
-      line-height: 49px;
+      height: 82px;
+      max-height: 82px;
+      line-height: 50px;
       transition-duration: 400ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -218,15 +179,70 @@ input[type=text]:focus, input[type=password]:focus {
       .page-on-scroll .page-header .navbar-brand img.logo-default {
         display: none; }
     .page-on-scroll .page-header .navbar-nav li {
-      padding: 19px 1px;
+      padding: 25px 10px;
       transition-duration: 400ms;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-    .page-on-scroll .page-header .navbar-nav li > a {
-      color: #3f5263; }
-    .page-on-scroll .page-header .navbar-nav li.active > a,
+    .page-on-scroll .page-header .navbar-nav li > a,
+    .page-on-scroll .page-header .navbar-nav li.active > a {
+      font-family:Heebo, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      border: none;
+      text-transform: capitalize;
+      color: #151515; }
+    
     .page-on-scroll .page-header .navbar-nav li > a:hover {
-      border: 1px solid #e5e5e5; } }
+      color: #FFFFFF; } }
+
+/* Responsive code for max-width: 991px */
+@media (max-width: 991px) {
+  /* 991px */
+  .page-header .navbar-header {
+    float: none; }
+  .page-header .navbar-toggle {
+    display: block; }
+  .page-header .navbar-collapse.collapse {
+    display: none !important; }
+  .page-header .navbar-collapse.collapse.in {
+    display: block !important;
+    overflow-y: auto !important; }
+  .page-header .navbar-nav {
+    margin: 0;
+    float: none !important; }
+    .page-header .navbar-nav > li {
+      float: none; } }
+
+/* Stylesheet design for under max-width: 991px */
+@media (max-width: 991px) {
+  /* 991px */
+  body {
+    padding-top: 80px; }
+
+  .page-header {
+    background: #FFFFFF;
+    /* Navbar Brand */ }
+    .page-header .navbar-fixed-top {
+      background-color: #0066D0;}
+      .page-header .navbar-fixed-top .navbar-collapse {
+        max-height: 100%;
+        padding: 0 10px 10px 10px;
+        /* Navbar */ }
+        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li {
+          padding: 0;
+          float: none; }
+        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li > a, 
+        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li.active > a, {
+          font-weight: 500;
+          color: #FFFFFF; }
+        
+        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li > a:hover {
+          color: #1A1A1A; background-color: #E8ECF1;}
+    .page-header img.logo-default {
+      display: none; } }
+
+
 /*--------------------------------------------------
   [PAGE CONTENT]
 ----------------------------------------------------*/
@@ -389,16 +405,16 @@ a:focus {
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-  .btn-brd-white:focus, .btn-brd-white:active:focus, .btn-brd-white.active:focus {
+  .btn-brd-signin:focus, .btn-brd-signin:active:focus, .btn-brd-signin.active:focus {
     background-image: none;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .btn-brd-white:hover, .btn-brd-white:focus {
+  .btn-brd-signin:hover, .btn-brd-signin:focus {
     text-decoration: none;
-    color: #3f5263;
-    background: #fff;
-    border-color: #fff;
+    color: #FFFFFF;
+    background: #FFA800;
+    border: 0;
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -423,16 +439,16 @@ a:focus {
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-  .btn-brd-white:focus, .btn-brd-white:active:focus, .btn-brd-white.active:focus {
+  .btn-brd-signin2:focus, .btn-brd-signin2:active:focus, .btn-brd-signin2.active:focus {
     background-image: none;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .btn-brd-white:hover, .btn-brd-white:focus {
+  .btn-brd-signin2:hover, .btn-brd-signin2:focus {
     text-decoration: none;
-    color: #3f5263;
-    background: #fff;
-    border-color: #fff;
+    color: #FFFFFF;
+    background: #FFA800;
+    border: 0;
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -1812,9 +1828,9 @@ a:focus {
   .carousel .carousel-subtitle-v3 {
     color: #E8ECF1; }
   .carousel .carousel-position {
-    top: 35%; }
+    top: 20%; }
   .carousel .carousel-position-two {
-    top: 35%; 
+    top: 20%; 
     right: 10%;
   }
   /*.carousel .carousel-position-three {
@@ -1854,7 +1870,7 @@ a:focus {
   margin: auto;
   padding: 15px 20px 30px 20px; /* top, left, bottom, right*/
   border: 1px solid #888;
-  width: 25%;
+  width: 400px;
   border-radius: 15px;
 }
 
@@ -1862,7 +1878,18 @@ a:focus {
   font-family: Heebo, sans-serif;
   font-size: 16px;
   font-weight: 100;
+  padding-top: 10px;
   text-align: center;
+}
+
+.modal-content label {
+  font-family: Heebo, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #151515;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: left;
 }
 
 .modal-content .forgot-password {
@@ -1870,21 +1897,36 @@ a:focus {
   font-size: 12px;
   font-weight: 500;
   color: #151515;
+  padding-top: 10px;
+  padding-bottom: 15px;
   text-align: center;
 }
+.forgot-password:focus, .forgot-password:active:focus, .forgot-password:focus {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .forgot-password:hover, .forgot-password:focus {
+    text-decoration: none;
+    color: #888;
+    border: 0;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+
 
 /* The Close Button (x) */
 .close {
-  position: absolute;
-  right: 430px;
-  top: 100px;
+  position: fixed;
+  right: 10px;
+  top: 0;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: transparent;
 }
 
 .close:hover, .close:focus {
-  color: #f44336;
+  color: transparent;
   cursor: pointer;
 }
 
