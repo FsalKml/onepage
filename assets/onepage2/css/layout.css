@@ -1901,8 +1901,3 @@ hr {
     border-radius: 15px; 
     overflow: hidden; 
 }
-
-video{
-  width: 480px;
-  object-fit: cover;
-}
