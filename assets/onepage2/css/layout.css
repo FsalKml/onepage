@@ -7,11 +7,11 @@ body {font-family: Heebo, sans-serif;}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 5px;
+  padding: 5px 15px 5px 15px; /* top, left, bottom, right*/
   margin: 0;
   margin-bottom: 10px;
-  display: block;
-  border: 1px solid: #E8ECF1;
+  display: inline-block;
+  border: 1.5px solid #CACFD2;
   border-radius: 30px;
   background: #FFFFFF;
 }
@@ -76,7 +76,7 @@ input[type=text]:focus, input[type=password]:focus {
 ----------------------------------------------------*/
 /* Page on Scroll */
 .page-on-scroll .page-header {
-  background: #fff;
+  background: #0066D0;
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -1852,7 +1852,7 @@ a:focus {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 15px 20px 30px 20px; /* top, left, bottom, right*/
   border: 1px solid #888;
   width: 25%;
   border-radius: 15px;
