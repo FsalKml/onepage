@@ -1,19 +1,23 @@
-body {font-family: Arial, Heebo, sans-serif;}
+/*--------------------------------------------------
+    [INPUT TEXT]
+----------------------------------------------------*/
+body {font-family: Heebo, sans-serif;}
 * {box-sizing: border-box;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  padding: 5px;
+  margin: 1px 0 1px 0;
+  display: block;
+  border: 1px solid: #E8ECF1;
+  border-radius: 30px;
+  background: #FFFFFF;
 }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: #FFFFFF;
   outline: none;
 }
 
@@ -22,12 +26,12 @@ input[type=text]:focus, input[type=password]:focus {
 ----------------------------------------------------*/
 /* Carousel Title */
 .carousel .carousel-title-v1, .carousel .carousel-title-v3 {
-  font-family:Heebo, sans-serif;
+  font-family: Heebo, sans-serif;
   font-size: 40px;
   font-weight: 700; }
 
 .carousel .carousel-title-v2{
-  font-family:Heebo, sans-serif;
+  font-family: Heebo, sans-serif;
   font-size: 40px;
   font-weight: 700; }
 
@@ -36,7 +40,7 @@ input[type=text]:focus, input[type=password]:focus {
 .carousel .carousel-subtitle-v1, .carousel .carousel-subtitle-v2, .carousel .carousel-subtitle-v3 {
   font-family:Heebo, sans-serif;
   font-size: 21px;
-  font-weight: 100; 
+  font-weight: 300; 
   padding-bottom: 15px;
 }
 
@@ -123,7 +127,7 @@ input[type=text]:focus, input[type=password]:focus {
   .page-header .navbar-nav li > a {
     font-family:Heebo, sans-serif;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 1px;
     border: none;
     text-transform: capitalize;
@@ -1636,11 +1640,11 @@ a:focus {
   padding: 50px 0;
   text-align: center;
   background: #25303a; }
-  .footer-copyright h3 {
-    font-size: 30px;
+  .footer-copyright h4 {
+    font-size: 18px;
     margin: 0 0 40px;
-    text-transform: uppercase;
-    color: #fff; }
+    text-transform: capitalize;
+    color: #ffffff; }
   .footer-copyright p {
     margin-bottom: 0;
     color: #8693a7; }
@@ -1833,7 +1837,7 @@ a:focus {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 150px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -1850,25 +1854,41 @@ a:focus {
   padding: 20px;
   border: 1px solid #888;
   width: 25%;
+  border-radius: 15px;
 }
 
-/* The Close Button */
+.modal-content .signin-title {
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.modal-content .forgot-password {
+  font-family: Heebo, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #151515;
+  text-align: center;
+}
+
+/* The Close Button (x) */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
+  position: absolute;
+  right: 430px;
+  top: 100px;
+  font-size: 40px;
   font-weight: bold;
+  color: #f1f1f1;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+.close:hover, .close:focus {
+  color: #f44336;
   cursor: pointer;
 }
 
 /* Style the horizontal ruler */
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #E8ECF1;
   margin-bottom: 10px;
 }
