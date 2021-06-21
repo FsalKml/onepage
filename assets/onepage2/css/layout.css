@@ -355,16 +355,16 @@ a:focus {
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-  .btn-brd-white:focus, .btn-brd-white:active:focus, .btn-brd-white.active:focus {
+  .btn-brd-yellow:focus, .btn-brd-yellow:active:focus, .btn-brd-yellow.active:focus {
     background-image: none;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .btn-brd-white:hover, .btn-brd-white:focus {
+  .btn-brd-yellow:hover, .btn-brd-yellow:focus {
     text-decoration: none;
-    color: #3f5263;
-    background: #fff;
-    border-color: #fff;
+    color: #FFFFFF;
+    background: #FFA800;
+    border: 0;
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -1814,7 +1814,7 @@ a:focus {
   .carousel .carousel-position {
     top: 35%; }
   .carousel .carousel-position-two {
-    top: 30%; 
+    top: 35%; 
     right: 10%;
   }
   /*.carousel .carousel-position-three {
@@ -1892,4 +1892,17 @@ a:focus {
 hr {
   border: 1px solid #E8ECF1;
   margin-bottom: 10px;
+}
+
+/* Rounded Video*/
+.video-mask{
+    width: 480px;
+    height: 260px;
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+video{
+  width: 480px;
+  object-fit: cover;
 }
