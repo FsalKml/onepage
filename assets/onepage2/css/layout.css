@@ -239,7 +239,7 @@ input[type=text]:focus, input[type=password]:focus {
     display: none !important; }
   .page-header .navbar-collapse.collapse.in {
     display: block !important;
-    overflow-y: auto; !important; }
+    overflow-y: auto !important; }
   .page-header .navbar-nav {
     margin: 0;
     float: none !important; }
@@ -265,7 +265,7 @@ input[type=text]:focus, input[type=password]:focus {
           padding: 0;
           float: none; }
         .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li > a, 
-        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li.active > a, {
+        .page-header .navbar-fixed-top .navbar-collapse .navbar-nav li.active > a {
           font-weight: 500;
           color: #FFFFFF; }
         
