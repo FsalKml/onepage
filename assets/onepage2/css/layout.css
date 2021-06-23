@@ -1,27 +1,8 @@
 /*--------------------------------------------------
-    [INPUT TEXT]
+    [BODY]
 ----------------------------------------------------*/
 body {font-family: Heebo, sans-serif; }
 * {box-sizing: border-box;}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 5px 15px 5px 15px; /* top, left, bottom, right*/
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: inline-block;
-  border: 1.5px solid #CACFD2;
-  border-radius: 30px;
-  background: #FFFFFF;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #FFFFFF;
-  outline: none;
-}
 
 /*--------------------------------------------------
     [SASS PLACEHOLDER]
@@ -53,8 +34,6 @@ input[type=text]:focus, input[type=password]:focus {
 .carousel .carousel-position, .carousel-position-two {
   position: absolute; 
   left: auto; } 
-
-
 
 /*--------------------------------------------------
   [PLACEHOLDER]
@@ -105,7 +84,7 @@ input[type=text]:focus, input[type=password]:focus {
     border: 0;
     margin: 25px 15px 25px 0; }
     .page-header .navbar-toggle .icon-bar {
-      background: #0066D0; }
+      background: #FFFFFF; }
   .page-header .navbar-brand {
     height: 82px;
     max-height: 82px;
@@ -128,7 +107,7 @@ input[type=text]:focus, input[type=password]:focus {
     transition-duration: 400ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-  .page-header .navbar-nav li > a {
+  .page-header .navbar-nav li > a { 
     font-family:Heebo, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -218,10 +197,10 @@ input[type=text]:focus, input[type=password]:focus {
       letter-spacing: 1px;
       border: none;
       text-transform: capitalize;
-      color: #151515; }
+      color: #FFFFFF; }
     
     .page-on-scroll .page-header .navbar-nav li > a:hover {
-      color: #FFFFFF; } }
+      color: #151515; } }
 
 /*--------------------------------------------------
   [TABLET & PHONE]
@@ -258,6 +237,7 @@ input[type=text]:focus, input[type=password]:focus {
     .page-header .navbar-fixed-top {
       background-color: #0066D0; }
       .page-header .navbar-fixed-top .navbar-collapse {
+        background-color: #006fe6;
         max-height: 100%;
         padding: 0 10px 10px 10px;
         /* Navbar */ }
@@ -344,28 +324,50 @@ a:focus {
   display: table-cell;
   vertical-align: middle; }
 
+/* Full-width input fields */
+.form-wrap-group input[type=text], input[type=password] {
+  width: 97%;
+  padding: 5px 15px 5px 15px; /* top, left, bottom, right*/
+  margin: 0;
+  margin-top: 5px;
+  display: inline-block;
+  border: 1.5px solid #707070;
+  border-radius: 30px;
+  background: transparent;
+}
+
+/* Add a background color when the inputs get focus */
+.form-wrap-group input[type=text]:focus, input[type=password]:focus {
+  background-color: #1A1A1A;
+  outline: none;
+}
+
 /* Focus stylesheet effect for 'input' */
 .form-control {
-  color: #97a7b4;
-  font-size: 17px;
+  color: #707070;
+  margin-top: 10px;
+  font-size: 14px;
   font-weight: 300;
   min-width: 100px;
-  min-height: 50px;
-  border-radius: 0;
+  min-height: 40px;
+  border-radius: 10px;
+  resize: none;
   box-shadow: none;
-  border-color: #3b4e5f;
+  border: solid 1.5px #707070;
   background: transparent; }
   .form-control:-moz-placeholder {
-    color: #516473; }
+    color: #707070; }
   .form-control::-moz-placeholder {
-    color: #516473; }
+    color: #707070; }
   .form-control:-ms-input-placeholder {
-    color: #516473; }
+    color: #707070; }
   .form-control::-webkit-input-placeholder {
-    color: #516473; }
+    color: #707070; }
   .form-control:focus {
     box-shadow: none;
-    border-color: #3b4e5f; }
+    border: solid 1.5px #707070; }
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -470,7 +472,7 @@ a:focus {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
 
-  /* Button Signin2 */
+/* Button Signin2 */
 .btn-brd-signin2 {
   outline: none;
   display: block;
@@ -496,6 +498,40 @@ a:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-brd-signin2:hover, .btn-brd-signin2:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #FFA800;
+    border: 0;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+
+/* Button Submit */
+.btn-brd-submit {
+  outline: none;
+  display: block;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  color: #151515;
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-family:Heebo, sans-serif;
+  font-size: 18px;
+  background-color: #FFA800;
+  line-height: 1.5;
+  border-radius:30px;
+  width: 100%;
+  border: 0;
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+  .btn-brd-submit:focus, .btn-brd-submit:active:focus, .btn-brd-submit.active:focus {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .btn-brd-submit:hover, .btn-brd-submit:focus {
     text-decoration: none;
     color: #FFFFFF;
     background: #FFA800;
@@ -1302,23 +1338,77 @@ a:focus {
 
 .heading-left-light {
   z-index: 1;
+  margin-top: 50px;
   margin-bottom: 30px; }
   .heading-left-light h2 {
     font-size: 30px;
-    margin: 0 0 20px;
-    color: #fff;
-    text-transform: capitalize; }
-  .heading-left-light p {
-    color: #8693a7;
+    margin: 0 0 30px;
+    color: #FFFFFF; }
+  /* .heading-left-light p {
+    color: #FFFFFF;
     font-size: 16px;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px; } */
+
+.heading-text {
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0.5px; 
+  padding-left: 30px;}
+}
+
+/*--------------------------------------------------
+  [INFO]
+----------------------------------------------------*/
+.info-section{}
+
+.info-bg {
+  z-index: 1;
+  height: auto;
+  overflow: hidden;
+  padding: 100px 0 100px 0; }
+
+  .info-bg .info-pic-rounded {
+    width: 95%;
+    height: 95%; 
+    border-radius: 0;
+    overflow: hidden; 
+    margin: auto; }
+  .info-bg .info-pic-rounded .info-pic img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    display: block;
+    margin: auto; }
+  .info-bg .info-pic-rounded .info-pic:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+    
+  .info-bg .info-about {
+    padding: 30px 30px 10px 30px; background-color: transparent; }
+  .info-bg .info-about h3 {
+    color: #0066D0;
+    font-size: 28px;
+    margin: 0 0 10px; }
+  .info-bg .info-about p {
+    color: #707070; }
 
 /*--------------------------------------------------
   [SUBSCRIBE]
 ----------------------------------------------------*/
-.subscribe {
+.subs {
+  /* Subcribe*/
+}
+
+.subs .subscribe {
+  background-color: #0066D0;
   padding: 42px 0;
-  background: #2c3a46;
   /* Subscribe Wrapper */
   /* Input Field */ }
   .subscribe .subscribe-wrap {
@@ -1332,15 +1422,15 @@ a:focus {
     display: table-cell;
     vertical-align: middle; }
   .subscribe .subscribe-desc {
-    max-width: 550px;
+    max-width: 250px;
     padding-right: 20px; }
     .subscribe .subscribe-desc h1 {
       font-size: 30px;
-      margin: 0 0 10px;
+      margin: 0 0 5px;
       letter-spacing: 2px;
-      color: #fff; }
+      color: #FFFFFF; }
     .subscribe .subscribe-desc p {
-      color: #5d7283;
+      color: #FFFFFF;
       font-size: 19px;
       font-weight: 300;
       margin-bottom: 0; }
@@ -1374,10 +1464,15 @@ a:focus {
   [SERVICES]
 ----------------------------------------------------*/
 .service-bg {
-  padding-top: 130px;
-  padding-bottom: 80px; }
+  padding-top: 60px;
+  padding-bottom: 30px; }
+  .service-bg h2 {
+      font-size: 34px;
+      line-height: 0;
+      text-align: center;
+      color: #000080; }
   .service-bg .services {
-    margin: 0 auto;
+    margin: 130px 0 0 0;
     text-align: center; }
     .service-bg .services h2 {
       font-size: 23px;
@@ -1397,6 +1492,8 @@ a:focus {
       margin: 0 auto 70px;
       vertical-align: middle; }
       .service-bg .services .services-wrap:before {
+        z-index: -1;
+        background-color: #E8ECF1;
         top: -40px;
         left: -40px;
         right: -40px;
@@ -1698,25 +1795,20 @@ a:focus {
   [FOOTER]
 ----------------------------------------------------*/
 .footer {
-  background: #2c3a46;
+  background: #1A1A1A;
   padding: 100px 0 100px 0; }
 
 /*--------------------------------------------------
   [FOOTER COPYRIGHT]
 ----------------------------------------------------*/
 .footer-copyright {
-  padding: 50px 0;
-  text-align: center;
-  background: #25303a; }
-  .footer-copyright h4 {
-    font-size: 18px;
-    margin: 0 0 40px;
-    text-transform: capitalize;
-    color: #ffffff; }
-  .footer-copyright p {
+  padding: 20px 0;
+  background: #151515; }
+  .footer-copyright span {
     margin-bottom: 0;
-    color: #8693a7; }
-  .footer-copyright .copyright-socials {
+    color: #707070; }
+
+  /* .footer-copyright .copyright-socials {
     padding: 0;
     margin-bottom: 40px;
     list-style: none; }
@@ -1737,7 +1829,7 @@ a:focus {
           color: #fff;
           transition-duration: 400ms;
           transition-property: all;
-          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); } */
 
 /*--------------------------------------------------
   [CUBEPORTFOLIO]
@@ -1937,6 +2029,25 @@ a:focus {
   text-align: left;
 }
 
+/* Full-width input fields */
+.modal-content input[type=text], input[type=password] {
+  width: 100%;
+  padding: 5px 15px 5px 15px; /* top, left, bottom, right*/
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 1.5px solid #CACFD2;
+  border-radius: 30px;
+  background: #FFFFFF;
+}
+
+/* Add a background color when the inputs get focus */
+.modal-content input[type=text]:focus, input[type=password]:focus {
+  background-color: #FFFFFF;
+  outline: none;
+}
+
 .modal-content .forgot-password {
   font-family: Heebo, sans-serif;
   font-size: 12px;
@@ -1977,7 +2088,9 @@ a:focus {
 
 /* Style the horizontal ruler */
 hr {
-  border: 1px solid #E8ECF1;
+  width: 394px;
+  margin-left: -20px;
+  border: 1.5px solid #E8ECF1;
   margin-bottom: 10px;
 }
 
