@@ -1,7 +1,9 @@
 /*--------------------------------------------------
     [BODY]
 ----------------------------------------------------*/
-body {font-family: Heebo, sans-serif; }
+body {
+  font-family: Heebo, sans-serif;
+  overflow: hidden; }
 * {box-sizing: border-box;}
 
 /*--------------------------------------------------
@@ -1440,12 +1442,14 @@ a:focus {
   color: #FFFFFF;
   font-size: 16px;
   letter-spacing: 0.5px; 
-  padding-left: 30px; }
+  padding-left: 30px;}
 
 /*--------------------------------------------------
   [INFO]
 ----------------------------------------------------*/
-.info-section{}
+.info-section{
+  /* */
+}
 
 .info-bg {
   z-index: 1;
