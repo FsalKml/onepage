@@ -162,10 +162,14 @@ body {
   }
 
   .carousel .item {
-    min-height: 580px; }
+    min-height: 650px; }
 
   .carousel .carousel-position {
     margin-top: 110px; }
+    .carousel .carousel-position a {
+      transition-duration: 400ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
 
   .carousel .carousel-position-two {
     margin-top: 100px; }
@@ -510,9 +514,9 @@ a:focus {
   border-radius:30px;
   width: 190px;
   border: 0;
-  transition-duration: 100ms;
+  /* transition-duration: 100ms;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); */}
   .btn-brd-yellow:focus, .btn-brd-yellow:active:focus, .btn-brd-yellow.active:focus {
     background-image: none;
     outline: 0;
@@ -523,9 +527,9 @@ a:focus {
     color: #FFFFFF;
     background: #FFA800;
     border: 0;
-    transition-duration: 400ms;
+    /* transition-duration: 400ms;
     transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); */}
 
 /* Button Signin */
 .btn-brd-signin {
@@ -2197,46 +2201,47 @@ video {
   overflow: hidden;
   width: 100%; 
   height: 150px; 
-  display: block; }
+  display: inline-block; }
 
 .partners .partners-logo-one {
   position: absolute;
   background-color: #E8ECF1;
-  margin: 30px 20px;
-  width: 80px;
-  height: 80px; 
+  margin: 30px 8px;
+  width: 130px;
+  height: 130px; 
   border-radius: 50%;
-  border: 3px solid #FFFFFF; }
+  border: 4px solid #FFFFFF; }
 
 .partners .partners-logo-one img {
-  margin: 20px 11px;
+  margin: 20px 8px;
   width: auto;
-  height: 35px; }
+  height: 72px; }
 
 .partners .partners-logo-two {
   position: absolute;
   background-color: #E8ECF1;
-  margin: 30px 120px;
-  width: 80px;
-  height: 80px;
+  margin: 30px 160px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  border: 3px solid #FFFFFF; }
+  border: 4px solid #FFFFFF; }
 
 .partners .partners-logo-two img {
-  margin: 18px 21px;
+  margin: 27px 33px;
   width: auto;
-  height: 40px; }
+  height: 70px; }
 
 .partners .partners-logo-three {
   position: absolute;
   background-color: #E8ECF1;
-  margin: 30px 220px;
-  width: 80px;
-  height: 80px;
+  margin: 30px 310px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  border: 3px solid #FFFFFF; }
+  border: 4px solid #FFFFFF; }
 
 .partners .partners-logo-three img {
-  margin: 10px 10px;
+  margin: 15px 15px;
   width: auto;
-  height: 55px; }
+  height: 95px; }
+
