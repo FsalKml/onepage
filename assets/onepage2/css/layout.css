@@ -1,6 +1,9 @@
 /*--------------------------------------------------
     [BODY]
 ----------------------------------------------------*/
+html {
+  scroll-behavior: smooth; }
+  
 body {
   font-family: Heebo, sans-serif;
   overflow: hidden; }
@@ -88,8 +91,8 @@ body {
     .page-header .navbar-toggle .icon-bar {
       background: #FFFFFF; }
   .page-header .navbar-brand {
-    height: 60px;
-    max-height: 60px;
+    height: 70px;
+    max-height: 70px;
     line-height: 50px;
     display: inline-block;
     vertical-align: middle;
@@ -162,20 +165,22 @@ body {
   }
 
   .carousel .item {
-    min-height: 650px; }
+    min-height: 710px; }
 
   .carousel .carousel-position {
-    margin-top: 110px; }
-    .carousel .carousel-position a {
-      transition-duration: 400ms;
-      transition-property: all;
-      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+    margin: 110px 0 50px; }
 
   .carousel .carousel-position-two {
     margin-top: 100px; }
 
-  .partners { 
-    margin: 0; }}
+  .partners-bg .partners .partners-wrap-one { 
+    margin: 0 30px 10px; }
+
+  .partners-bg .partners .partners-wrap-two { 
+    margin: 0 -10px 10px; }
+
+  .partners-bg .partners .partners-wrap-three { 
+    margin: 0 -50px 10px; }}
 
 /* Stylesheet design on Scroll (Fixed Header) 992px */
 @media (min-width: 992px) {
@@ -184,8 +189,8 @@ body {
     /* Navbar Brand */
     /* Navbar Nav */ }
     .page-on-scroll .page-header .navbar-brand {
-      height: 60px;
-      max-height: 60px;
+      height: 70px;
+      max-height: 70px;
       line-height: 50px;
       vertical-align: middle;
       transition-duration: 400ms;
@@ -274,7 +279,7 @@ body {
     overflow: hidden; }
 
   .carousel .item {
-    min-height: 1050px; }
+    min-height: 1630px; }
 
   .carousel .carousel-position {
     position: absolute;
@@ -286,15 +291,21 @@ body {
     width: 100%;
     margin-top: 150px; }
 
-  .partners { 
-    margin: 320px 0 30px 0; }}
+  .partners-bg .partners .partners-wrap-one { 
+    margin: 350px 60px 10px; }
+
+  .partners-bg .partners .partners-wrap-two { 
+    margin: 350px 100px 10px; }
+
+  .partners-bg .partners .partners-wrap-three { 
+    margin: 350px 140px 10px; }}
 
 /*--------------------------------------------------
   [PHONE]
 ----------------------------------------------------*/
-/* Responsive code for max-width: 991px */
+/* Responsive code for max-width: 600px */
 @media (max-width: 600px) {
-  /* 991px */
+  /* 600px */
 
   .page-header .navbar-header {
     float: none;
@@ -312,9 +323,9 @@ body {
     .page-header .navbar-nav > li {
       float: none; }}
 
-/* Stylesheet design for under max-width: 991px */
+/* Stylesheet design for under max-width: 600px */
 @media (max-width: 600px) {
-  /* 991px */
+  /* 600px */
   body {
     padding-top: 80px; }
 
@@ -350,7 +361,7 @@ body {
     overflow: hidden; }
 
   .carousel .item {
-    min-height: 830px; }
+    min-height: 1460px; }
 
   .carousel .carousel-position {
     position: absolute;
@@ -362,8 +373,14 @@ body {
     width: 100%;
     margin-top: 130px; }
 
-  .partners { 
-    margin-top: 280px; }}
+  .partners-bg .partners .partners-wrap-one { 
+    margin: 350px auto 10px; }
+
+  .partners-bg .partners .partners-wrap-two { 
+    margin: 0 auto 10px; }
+
+  .partners-bg .partners .partners-wrap-three { 
+    margin: 0 auto 10px; }}
 
 
 /*--------------------------------------------------
@@ -2197,51 +2214,89 @@ video {
   height: auto;
 }
 
-.partners { 
-  overflow: hidden;
-  width: 100%; 
-  height: 150px; 
-  display: inline-block; }
+/*--------------------------------------------------
+    [PARTNERS]
+----------------------------------------------------*/
+.partners-bg {
+  padding-top: 0;
+  padding-bottom: 30px; }
+  .partners-bg .partners {
+    margin: 80px 0 0 0;
+    text-align: center; }
+    .partners-bg .partners .partners-body {
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle; }
 
-.partners .partners-logo-one {
-  position: absolute;
-  background-color: #E8ECF1;
-  margin: 30px 8px;
-  width: 130px;
-  height: 130px; 
-  border-radius: 50%;
-  border: 4px solid #FFFFFF; }
+    .partners-bg .partners .partners-wrap-one {
+      width: 100px;
+      height: 100px;
+      display: table;
+      text-align: center;
+      position: relative;
+      vertical-align: middle; }
+      .partners-bg .partners .partners-wrap-one:before {
+        z-index: -1;
+        background-color: #E8ECF1;
+        top: -30px;
+        left: -30px;
+        right: -30px;
+        bottom: -30px;
+        content: " ";
+        border-radius: 50%;
+        position: absolute;
+        border: 3px solid #FFFFFF; }
+      .partners-bg .partners .partners-wrap-one img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        text-align: center; }
 
-.partners .partners-logo-one img {
-  margin: 20px 8px;
-  width: auto;
-  height: 72px; }
+    .partners-bg .partners .partners-wrap-two {
+      width: 100px;
+      height: 100px;
+      display: table;
+      text-align: center;
+      position: relative;
+      vertical-align: middle; }
+      .partners-bg .partners .partners-wrap-two:before {
+        z-index: -1;
+        background-color: #E8ECF1;
+        top: -30px;
+        left: -30px;
+        right: -30px;
+        bottom: -30px;
+        content: " ";
+        border-radius: 50%;
+        position: absolute;
+        border: 3px solid #FFFFFF; }
+      .partners-bg .partners .partners-wrap-two img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        text-align: center; }
 
-.partners .partners-logo-two {
-  position: absolute;
-  background-color: #E8ECF1;
-  margin: 30px 160px;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 4px solid #FFFFFF; }
-
-.partners .partners-logo-two img {
-  margin: 27px 33px;
-  width: auto;
-  height: 70px; }
-
-.partners .partners-logo-three {
-  position: absolute;
-  background-color: #E8ECF1;
-  margin: 30px 310px;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 4px solid #FFFFFF; }
-
-.partners .partners-logo-three img {
-  margin: 15px 15px;
-  width: auto;
-  height: 95px; }
+    .partners-bg .partners .partners-wrap-three {
+      width: 100px;
+      height: 100px;
+      display: table;
+      text-align: center;
+      position: relative;
+      vertical-align: middle; }
+      .partners-bg .partners .partners-wrap-three:before {
+        z-index: -1;
+        background-color: #E8ECF1;
+        top: -30px;
+        left: -30px;
+        right: -30px;
+        bottom: -30px;
+        content: " ";
+        border-radius: 50%;
+        position: absolute;
+        border: 3px solid #FFFFFF; }
+      .partners-bg .partners .partners-wrap-three img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        text-align: center; }
 
