@@ -5,7 +5,7 @@
 body {
   font-family: Heebo, sans-serif;
   overflow: hidden; }
-* {box-sizing: border-box;}
+* { box-sizing: border-box; }
 
 textarea {
     width: 100%;
@@ -46,8 +46,7 @@ textarea {
   font-family:Heebo, sans-serif;
   font-size: 21px;
   font-weight: 300; 
-  padding-bottom: 15px;
-}
+  padding-bottom: 15px; }
 
 /* Carousel Position Left */
 /* .carousel .carousel-position-one, .carousel .carousel-position-two, .carousel .carousel-position-three {
@@ -239,8 +238,7 @@ textarea {
 
     .page-header .navbar-fixed-top .navbar-collapse .navbar-nav .btn-brd-signin {
       width: 100px;
-      margin-top: -5px;
-    }
+      margin-top: -5px; }
     .page-header .navbar-fixed-top .navbar-collapse .navbar-nav .btn-brd-signin:hover {
       color: #FFFFFF; }}
 
@@ -433,7 +431,6 @@ textarea {
 
   .partners-bg .partners .partners-wrap-three { 
     margin: 0 auto 10px; }}
-
 
 /*--------------------------------------------------
   [PAGE CONTENT]
@@ -2349,4 +2346,3 @@ video {
         height: 170px;
         margin: 0 auto;
         text-align: center; }
-
