@@ -87,6 +87,7 @@ textarea {
     background: inherit; }
 
 .page-header {
+  background-color: #0066D0;
   padding: 0;
   margin: 0;
   border-bottom: none;
@@ -272,12 +273,11 @@ textarea {
     padding-top: 80px; }
 
   .page-header {
-    background: #FFFFFF;
+    background: #0066D0;
     /* Navbar Brand */ }
     .page-header .navbar-fixed-top {
       background-color: #0066D0; }
       .page-header .navbar-fixed-top .navbar-collapse {
-        border: 0;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background-color: #006fe6;
@@ -368,11 +368,13 @@ textarea {
     padding-top: 80px; }
 
   .page-header {
-    background: #FFFFFF;
+    background: #0066D0;
     /* Navbar Brand */ }
     .page-header .navbar-fixed-top {
       background-color: #0066D0; }
       .page-header .navbar-fixed-top .navbar-collapse {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         background-color: #006fe6;
         max-height: 100%;
         padding: 10px 10px 10px 10px;
@@ -2346,3 +2348,5 @@ video {
         height: 170px;
         margin: 0 auto;
         text-align: center; }
+
+        
