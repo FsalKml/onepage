@@ -4,7 +4,7 @@
 
 body {
   font-family: Heebo, sans-serif;
-  overflow: hidden;
+  overflow: scroll;
 -webkit-overflow-scrolling: touch; }
 * { box-sizing: border-box; }
 
