@@ -365,9 +365,7 @@ textarea {
 @media (max-width: 600px) {
   /* 600px */
   body {
-    padding-top: 80px;
-    
--webkit-overflow-scrolling: touch; }
+    padding-top: 80px; }
 
   .page-header {
     background: #0066D0;
