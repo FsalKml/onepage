@@ -411,6 +411,9 @@ textarea {
   .video-mask video{
     border-radius: 15px; 
     overflow: hidden; }
+    
+  .modal-content {
+    width: 100%; }
 
   .carousel .item {
     min-height: 1530px; }
@@ -2171,7 +2174,7 @@ a:focus {
   margin: auto;
   padding: 15px 20px 30px 20px; /* top, left, bottom, right*/
   border: 1px solid #888;
-  width: 100px;
+  width: 500px;
   border-radius: 15px;
 }
 
