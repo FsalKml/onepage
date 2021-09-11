@@ -4,8 +4,7 @@
 
 body {
   font-family: Heebo, sans-serif;
-  overflow: scroll;
--webkit-overflow-scrolling: touch; }
+  overflow: hidden; }
 * { box-sizing: border-box; }
 
 textarea {
@@ -366,7 +365,9 @@ textarea {
 @media (max-width: 600px) {
   /* 600px */
   body {
-    padding-top: 80px; }
+    padding-top: 80px;
+    
+-webkit-overflow-scrolling: touch; }
 
   .page-header {
     background: #0066D0;
