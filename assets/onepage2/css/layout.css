@@ -4,7 +4,8 @@
 
 body {
   font-family: Heebo, sans-serif;
-  overflow: hidden; }
+  overflow: hidden;
+-webkit-overflow-scrolling: touch; }
 * { box-sizing: border-box; }
 
 textarea {
